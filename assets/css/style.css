@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: white;
+}
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+
+    color: white;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__wrapper {
+    min-height: 60px;
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.header__link {
+    display: block;
+    background: url(../svg/logo1.svg) no-repeat top;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    margin: 0px 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.header__link:hover {
+    filter: invert(88%) sepia(97%) saturate(5637%) hue-rotate(145deg) brightness(100%) contrast(81%);
+}
+
+.navigation__wrapper {
+    margin-left: auto;
+}
+
+.header__navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__navigation-item {
+    margin: 0px 10px;
+}
+
+.header__navigation-item:last-child {
+    margin-right: 20px;
+}
+
+.header__navigation-item:first-child {
+    margin-left: 20px;
+}
+
+.header__button {
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  text-decoration: none;
+  padding: .1em .3em 3px;
+  border-radius: 5px;
+  background: rgb(57, 160, 107);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header__button:hover {
+    background:  #188121;
+}
+
+.header__button:active {
+    background: #188121;
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.header__button-isActive{
+    color: rgb(238, 255, 0);
+}
+
+.main__wrapper {
+    flex: 1 1 auto;
+    background: url(../img/forest.jpg) no-repeat center;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}   
+
+.main__wrapper-isDrozd {
+    background: url(../img/drozd.jpg) no-repeat center;
+}
+
+.main__wrapper-isJavoronok {
+    background: url(../img/javoronok.jpg) no-repeat center;
+}
+
+.main__wrapper-isSlavka {
+    background: url(../img/slavka.jpg) no-repeat center;
+}
+
+.main__wrapper-isSolovey {
+    background: url(../img/solovey.jpg) no-repeat center;
+}
+
+.main__wrapper-isZarynka {
+    background: url(../img/zarynka.jpg) no-repeat center;
+}
+
+.play-button-isPlay {
+    width: 130px;
+    height: 130px;
+    background: url(../svg/play.svg) no-repeat center;
+    background-size: 100%;
+    border: none;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.play-button-isPause {
+    width: 130px;
+    height: 130px;
+    background: url(../svg/pause.svg) no-repeat center;
+    background-size: 100%;
+    border: none;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 60px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-box {
+    width: 182px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.left-box__img-copy {
+    display: block;
+    width: 19px;
+}
+
+.left-box__link {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.left-box__link:hover {
+    color: #188121;
+}
+
+.RSSchool-link {
+    display: block;
+    margin: 0px 20px;
+    background: url(../svg/rss.svg) no-repeat center;
+    height: 50px;
+    width: 100px;
+    background-size: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.RSSchool-link:hover {
+    filter: invert(88%) sepia(97%) saturate(5637%) hue-rotate(145deg) brightness(100%) contrast(81%);
+}
+
+
+@media screen and (max-width: 842px) {
+    .header__wrapper {
+        justify-content: center;
+    }
+
+    .header__navigation-list {
+        justify-content: center;
+    }
+
+    .header__navigation-item {
+        margin: 3px 10px;
+    }
+
+    .left-box {
+        flex-wrap: wrap;
+    }
+    
+
+}
